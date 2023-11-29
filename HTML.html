@@ -3,31 +3,18 @@
 <head>
 <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
 <style>
-body {
-  background-image: url('images/sample.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-size: 100% 100%;
-}
+
 </style>
 </head>
 <body>
 
-<img src="images/sample.jpg" width="500px" height="500px" alt="Workplace" usemap="#workmap">
+<h2>The picture Element</h2>
 
-
-
-
-<map name="workmap">
-  <area shape="circle" coords="337,300,44" href="images/sample.jpg" onclick="myFunction()">
-</map>
-
-<script>
-function myFunction() {
-  alert("You clicked the coffee cup!");
-}
-</script>
+<picture>
+  <source media="(min-width: 650px)" srcset="images/sample.jpg">
+  <source media="(min-width: 465px)" srcset="images/sample.jpg">
+  <img src="images/sample.jpg" style="width:auto;">
+</picture>
 
 <p style="background-image: url('images/sample.jpg');">
 You can specify background images<br>
