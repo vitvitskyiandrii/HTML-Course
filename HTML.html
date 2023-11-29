@@ -2,10 +2,20 @@
 <html lang="en-US">
 <head>
 <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+<style>
+body {
+  background-image: url('images/sample.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+</style>
 </head>
 <body>
 
 <img src="images/sample.jpg" width="500px" height="500px" alt="Workplace" usemap="#workmap">
+
 
 
 
@@ -18,6 +28,20 @@ function myFunction() {
   alert("You clicked the coffee cup!");
 }
 </script>
+
+<p style="background-image: url('images/sample.jpg');">
+You can specify background images<br>
+for any visible HTML element.<br>
+In this example, the background image<br>
+is specified for a p element.<br>
+By default, the background-image<br>
+will repeat itself in the direction(s)<br>
+where it is smaller than the element<br>
+where it is specified. (Try resizing the<br>
+browser window to see how the<br>
+background image behaves.
+</p>
+
 
 </body>
 </html>
