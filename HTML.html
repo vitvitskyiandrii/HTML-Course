@@ -4,22 +4,47 @@
   <title>My Page Title</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 <style>
-
+div {
+  background-color: #FFF4A3;
+}
+div.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+}
 </style>
 </head>
 <body>
 
-<p>Hello World</p>
-<div>Hello World</div>
+<h1>HTML DIV Example</h1>
 
-<span>Hello World</span>
+Lorem Ipsum <div>I am a div</div> dolor sit amet.
 
-<div style="background-color:black;color:white;padding:20px;">
+<p>The yellow background is added to demonstrate the footprint of the DIV element.</p>
+
+
+<h1>Multiple DIV Elements</h1>
+
+<div class="grid-container">
+<div style="background-color:#FFF4A3;">
   <h2>London</h2>
-  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>London is the capital city of England.</p>
+  <p>London has over 13 million inhabitants.</p>
 </div>
 
-<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+<div style="background-color:#FFC0C7;">
+  <h2>Oslo</h2>
+  <p>Oslo is the capital city of Norway.</p>
+  <p>Oslo has over 600.000 inhabitants.</p>
+</div>
+
+<div style="background-color:#D9EEE1;">
+  <h2>Rome</h2>
+  <p>Rome is the capital city of Italy.</p>
+  <p>Rome has almost 3 million inhabitants.</p>
+</div>
+</div>
+
+<p>CSS styles are added to make it easier to separate the divs, and to meake them more pretty:)</p>
 
 
 </body>
