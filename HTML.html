@@ -10,15 +10,91 @@
 
 
 
-<h1>My First JavaScript</h1>
+<h2>HTML Forms</h2>
 
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
+<form autocomplite="on" novalidate>
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" value="Name"><br>
+<label for="sname">Second name:</label><br>
+<input type="text" id="sname" name="sname" value="Name"><br><br>
+<input type="submit" value="Submit">
+</form><br><br>
 
-<p id="demo"></p>
+<h2>Radio Buttons</h2>
 
-<p id="demo2"></p>
+<p>Choose your favorite Web language:</p>
+
+<form autocomplite="on">
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form><br><br> 
+
+<h2>Checkboxes</h2>
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form><br><br>
+
+<form>
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="3" multiple>
+    <option value="bmw" selected>BMW</option>
+    <option value="audi">Audi</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="volkswagen">Volkswagen</option>
+</select>
+</form><br><br>
+
+<form action="/action_page.php">
+  <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+  <br><br>
+  <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+</form><br><br>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form><br><br>
+
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form><br><br>
+
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
 
 <script>
 document.getElementById("demo2").innerHTML = "Hello JavaScript!";
